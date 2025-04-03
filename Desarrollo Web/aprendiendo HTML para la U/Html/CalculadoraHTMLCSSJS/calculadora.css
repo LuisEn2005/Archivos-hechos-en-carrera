@@ -1,0 +1,38 @@
+*{
+    text-align: center;
+}
+body{
+    text-align: center;
+}
+#suma{
+    width: 60px;
+    height: 60px;
+}
+#resta{
+    width: 60px;
+    height: 60px;
+}
+#producto{
+    width: 60px;
+    height: 60px;
+}
+#division{
+    width: 60px;
+    height: 60px;
+}
+#igual{
+    width: 60px;
+    height: 60px;
+}
+.tabla{
+    border-collapse: collapse;
+    margin: auto;
+}
+.numero{
+    width: 60px;
+    height: 60px;
+}
+.resultado{
+    width: 238px;
+    height: 60px;
+}

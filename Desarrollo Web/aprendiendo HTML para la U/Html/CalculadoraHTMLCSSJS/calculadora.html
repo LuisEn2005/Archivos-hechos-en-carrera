@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>CALCULATORHTMLCSSJS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calculadora.css">
+    <script type="text/javascript" src="calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <h1>CalculadoraJS</h1>
+    </header>
+    <section>
+        <table class="tabla">
+            <tr>
+                <input class="resultado" type="number" id="resultado">
+            </tr>
+            <tr>
+                <td>
+                    <input class="numero" type="submit" value="Del" onclick="del()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" value="x^2" onclick="potencia2()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" value="rootsq" onclick="raiz()">
+                </td>
+                <td>
+                    <input id="division" type="submit" value="/" onclick="division()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="numero" type="submit" id="num7" value="7" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num8" value="8" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num9" value="9" onclick="num()">
+                </td>
+                <td>
+                    <input id="producto" type="submit" value="x" onclick="producto()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="numero" type="submit" id="num4" value="4" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num5" value="5" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num6" value="6" onclick="num()">
+                </td>
+                <td>
+                    <input id="resta" type="submit" value="-" onclick="resta()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="numero" type="submit" id="num1" value="1" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num2" value="2" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" id="num3" value="3" onclick="num()">
+                </td>
+                <td>
+                    <input id="suma" type="submit" value="+" onclick="suma()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="numero" type="submit" value="+/-" onclick="cambiosigno()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" value="0" onclick="num()">
+                </td>
+                <td>
+                    <input class="numero" type="submit" value="." onclick="punto()">
+                </td>
+                <td>
+                    <input id="igual" type="submit" value="=" onclick="igual()">
+                </td>
+            </tr>
+        </table>
+        <!--
+        <h2>Números</h2>
+        <table class="tabla">
+            <tr>
+                <td>
+                    <label for="n1">Primer Número:</label>
+                </td>
+                <td>
+                    <input class="numero" type="number" id="n1" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="n2">Segundo Número:</label>
+                </td>
+                <td>
+                    <input class="numero" type="number" id="n2" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="n3">Tercer Número:</label>
+                </td>
+                <td>
+                    <input class="numero" type="number" id="n3" step="1">
+                </td>
+            </tr>
+        </table>
+        -->
+        <h2>Operaciones</h2>
+        <table class="tabla">
+            <tr>
+                <td>
+                    <input id="suma" type="submit" value="+" onclick="suma()">
+                </td>
+                <td>
+                    <input id="resta" type="submit" value="-" onclick="resta()">
+                </td>
+                <td>
+                    <input id="producto" type="submit" value="x" onclick="producto()">
+                </td>
+                <td>
+                    <input id="division" type="submit" value="/" onclick="division()">
+                </td>
+            </tr>
+        </table>
+        <h2>Resultado</h2>
+        <table class="tabla">
+            <td>
+                <label for="resultado">Resultado:</label>
+            </td>
+            <td>
+                <input class="numero" type="number" id="resultado">
+            </td>
+        </table>
+    </section>
+</body>
+</html>

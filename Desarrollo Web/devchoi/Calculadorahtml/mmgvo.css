@@ -1,0 +1,11 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    text-align: center;
+}
+input{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}

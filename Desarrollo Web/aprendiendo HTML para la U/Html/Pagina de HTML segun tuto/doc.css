@@ -1,0 +1,37 @@
+*{
+    /*border-color: gray;
+    */
+    border-width: 4px;
+}
+#encabezado{
+    text-align: center;
+}
+hr{
+    color: gray;
+}
+#Tabla{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: red;
+}
+th{
+    color: orange;
+    background-color:  white;
+    text-align: center;
+}
+tr{
+    color: gray;
+    border-width: 4px;
+    border-style: solid;
+}
+tr:nth-of-type(2n+2){background-color: #000066;}
+tr:nth-of-type(2n+1){background-color: #FF0000;}
+/*
+*/
+tr:last-of-type{border-color: gray;color: yellow; text-align: right;}
+td{
+    border-style: solid;
+}

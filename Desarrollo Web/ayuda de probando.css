@@ -1,0 +1,193 @@
+/*Hay otras maneras de seleccionar una etiqueta de HTML en css
+para usar el color usando el codigo hexagesimal necesita el #
+1er ejemplo: */
+h1 {
+    color:#00ff00;
+}
+/* el "." es para seleccionar nombres de tipo "class"
+2do ejemplo: */
+.tu-puta-madre {
+    color:aqua;
+}
+/*el "#" es para seleccionar nombres de tipo "id"
+3er ejemplo: */
+#come-verga {
+    color:#0000ff;
+}
+#come-verga b:hover {
+    color:#000;
+}
+
+/*El "hover" sirve para cambiar de color segun el que se introduzca al momento de poner el
+mouse encima del texto, "b" es el texto a seleccionar en el html*/
+.tu-puta-madre b:hover {
+    color:#ff0000;
+}
+/*selector universal "*" */
+*{
+    font-size: 24px;
+    /*color: black; comentar esto para el hover*/
+}
+.color {
+    /* border: 5px red groove; */
+    /*
+    dotted
+    dashed
+    solid
+    double
+    groove / diseño en 3d
+    ridge / diseño en 3d
+    inset / diseño en 3d
+    outset / diseño en 3d
+    none
+    hidden
+    */
+    border-style: solid; 
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+    /*
+        todas las medidas son relativas 
+        rem (tamaño de la fuente del elemento raiz)
+        em (tamaño de la fuente actual)
+        cm (centimetros)
+        mm (milimetros)
+        pt (punto / 72avo de pulgada)
+        pc (pica / 12 puntos)
+        in (pulgada)
+        px (pixel)
+    */
+}
+
+#fondo {
+    /*el 4 espacio le da una transparencia al fondo del texto (se usan numeros entre 0 y 1)*/
+    /*opacity aplica una transparencia al elemento completo (se usan numeros entre 0 y 1) 
+    opacity: 0.3;
+    */
+    /*
+    background-image: url('D:/Memes Discord/+4 card.png');
+    height: 300px;
+    background-repeat: repeat-y;
+    background-position: center top;
+    */
+    background: url('D:/Memes Discord/+4 card.png') repeat-y center top / 100px 100px;
+    background-color: rgba(0,0,0,0.5);
+    /*background-size: 100px 100px;*/
+}
+/*box model*/
+.margen {
+    background-color: rgba(255,0,0,0.5);
+    margin: 15px 20px 25px 30px;
+    padding: 30px 20px 25px 30px;
+    border: dashed 1px black;
+    width: 100px;
+    height: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    /*1er valor mueve la sombra hacia la derecha, 2do valor mueve la sombra hacia abajo, 3er valor es
+    blur del texto*/
+    text-shadow: 3px 5px 5px purple;
+}
+/*en caso de usar estos estilos en link, se debe respetar el orden*/
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: purple;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: circle;
+    /* padding-left: 0; */
+    /*list-style-position: inside;*/
+}
+
+table {
+    width: 100%;
+    /*da separación en la tabla*/
+    border-collapse: collapse;
+}
+
+td,th {
+    border: solid 1px green;
+    padding: 15px;
+    color: black;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+}
+
+tr:nth-child(even) { /*funciones -even(impar) -odd(par)*/
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: #f00;
+}
+
+.inline {
+    display: inline;
+}
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.right {
+    float: right;
+    
+}
+.container {
+    height: 200px;
+}
+.column {
+    /* border:solid 1px #ddd; */
+    /* border-radius: 5px; */
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}

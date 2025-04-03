@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#general{
+    height:550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    position: relative;
+    background-image: url("src/Peopleparty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.5);
+}
+#encabezado{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+    width: 100%;
+    height: 50px;
+    color: black;
+}
+header{
+    display: flex;
+    margin-left:40px;
+}
+#Bar{
+    display: flex;
+    position: relative;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+}
+#Rightside > ul{
+    display: flex;
+    flex-direction: row;
+}
+#Rightside > li{
+    margin-right: 40px;
+}
+#Centertext{
+    width: 800px;
+    height: 200px;
+    color: white;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Title{
+    font-size: 30px;
+}
+#Button{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+#Undertext{
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 500px;
+}
+#Undertext > li{
+    margin-right: 40px;
+}
+#Underleft > ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+#Undercenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#Underright{
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+}
+.icon{
+    width: 20px;
+    height: auto;
+}
+.iconmedia{
+    width: 80px;
+    height:auto;
+}
+#general2{
+    height: 440px;
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    background: url("src/PeopleParty.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    align-content: space-between;
+    color: white;
+}
+#divleftText{
+    height: 300px;
+    width: 500px;
+    margin-left: 50px;;
+    display: flex;
+    position: absolute;
+    top: calc(50% - 150px);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: center;
+}
+#rightImg{
+    height: 300px;
+}
+#divrightImg{
+    display:flex;
+    align-items:center;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50%);
+}
