@@ -1,0 +1,20 @@
+int x=0;
+void setup(){
+  size(300, 300);
+  background(0);
+  noStroke();
+}
+void draw() {
+    background(0);
+    if(mousePressed){
+        if (x % 2== 0){
+            fill(255);
+            x+=1;
+        }ellipse(mouseX, mouseY, 30, 30);
+        if(x % 3==0){
+            
+            fill(0);
+            x+=1;
+        }triangle(mouseX,mouseY,mouseX + 20,mouseY - 40,mouseX + 40,mouseY);
+    }
+}

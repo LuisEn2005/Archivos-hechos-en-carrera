@@ -1,0 +1,35 @@
+int h=23;
+int m=59;
+int s=50;
+
+void setup() {
+   size (300, 100);
+   frameRate(1);
+}
+ 
+void draw() {
+   background(0);
+   textSize (30);
+   hora(h,m,s);
+   s = s +1;
+   if(s==60){
+       s = 0;
+       m = m+1;
+   }
+   if(m==60){
+       m = 0;
+       h = h+1;
+   }
+   if(h==24){
+       h = 0;
+   }
+}
+ 
+void hora(int h, int m, int s){
+    text (h, 50, 35);
+    text (":", 90, 35);
+    text (m, 110, 35);
+    text (":", 150, 35);
+    text (s, 170, 35);
+
+}

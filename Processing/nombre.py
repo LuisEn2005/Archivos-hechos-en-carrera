@@ -1,0 +1,12 @@
+nombre = str(input("Ingrese su nombre: "))
+print(len(nombre))
+print(nombre.find("L"))
+print(nombre.capitalize())
+print(nombre.upper())
+print(nombre.lower())
+print(nombre.isdigit())
+print(nombre.isalpha())
+print(nombre.count("u"))
+print(nombre.replace("u","i"))
+print(nombre*3)
+

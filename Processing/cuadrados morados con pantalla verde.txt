@@ -1,0 +1,10 @@
+void setup() 
+{ 
+  background(0,255,0);
+  size(500,500);
+}
+void draw()
+{
+  fill(126,23,164)
+  rect(random(0,500),random(0,500),100,100)
+}
