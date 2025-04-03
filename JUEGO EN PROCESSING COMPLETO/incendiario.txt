@@ -1,0 +1,22 @@
+PImage[] gif;
+int numberofframes;
+int f;
+void setup()
+{
+  background(255);
+  numberofframes = 4;
+  gif = new PImage[numberofframes];
+  frameRate(6.5);
+  int i = 0;
+  while (i < numberofframes){
+    gif[i] = loadImage("incendiary-frame_"+i+".gif");
+    i=i+1;
+}
+size(600,600);
+}
+void draw()
+{
+  image(gif[f],10,350,200,200);
+  f = f+1;
+  if (f == numberofframes) f=0;
+}
