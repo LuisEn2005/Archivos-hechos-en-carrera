@@ -1,0 +1,30 @@
+# 1. Definir una función o procedimiento que muestre un triángulo de asteriscos.
+# Altura? 4
+#    *
+#   ***
+#  *****                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+# *******
+
+def triangulo(numero):
+    for fila in range(numero):
+        print(" "*(numero-fila), "*"*(fila*2+1), end=" ")
+        print()
+        
+numero = int(input("Introduzca el número límite: "))
+triangulo(numero)
+
+# 2. Definir una función o procedimiento que muestre un rombo de asteriscos.
+# Altura? 3
+#   *
+#  ***
+# *****                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+#  ***
+#   *
+def rombo(numero):
+    for fila in range(numero):
+        print(" "*(numero-fila), "*"*(fila*2+1)) 
+    for fila in range(numero-2, -1, -1):
+        print(" "*(numero-fila), "*"*(fila*2+1))
+
+numero = int(input("Introduzca el número límite: "))
+rombo(numero)
