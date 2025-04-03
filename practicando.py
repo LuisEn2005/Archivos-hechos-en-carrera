@@ -1,0 +1,12 @@
+num1=int(input("introduce un numero: "))
+num2=int(input("introduce un numero: "))
+def aritmetica(num1,num2):
+    suma=(f"la suma de {num1}+{num2} es {num1 + num2}")
+    resta=(f"la resta de {num1}-{num2} es {num1 - num2}")
+    multiplicacion=(f"la multiplicacion de {num1}*{num2} es {num1 * num2}")
+    division=(f"la division de {num1}/{num2} es {num1 / num2}")
+    print(suma)
+    print(resta)
+    print(multiplicacion)
+    print(division)
+aritmetica(num1,num2)
